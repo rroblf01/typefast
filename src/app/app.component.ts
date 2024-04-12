@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TimernoticeComponent } from './component/timernotice/timernotice.component';
+import { WritingpadComponent } from './component/writingpad/writingpad.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [TimernoticeComponent, WritingpadComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

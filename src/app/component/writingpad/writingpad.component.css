@@ -1,0 +1,12 @@
+.text-to-write{
+    font-size: 25px;
+}
+
+.input-text{
+    width: 5vh;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
