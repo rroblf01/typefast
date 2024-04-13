@@ -14,6 +14,8 @@ export class WritingpadComponent implements OnInit{
   failLetters: number;
   words: string[] = [];
   inputText: any;
+  pressedKey: string = '';
+  expectedKey: string = '';
 
   constructor(private counterService: CounterService) {
     this.correctLetters = this.counterService.getCorrects();
@@ -31,6 +33,8 @@ export class WritingpadComponent implements OnInit{
     const letter = document.getElementById(`letter_${this.correctLetters}`);
     if (letter === null || event.key === 'Shift') return;
     let isCorrect = false;
+    this.pressedKey = event.key
+    this.expectedKey = this.placeholder[this.correctLetters]
     if (event.key === this.placeholder[this.correctLetters]) {
       isCorrect = true;
       this.correctLetters = this.counterService.incCorrect();
