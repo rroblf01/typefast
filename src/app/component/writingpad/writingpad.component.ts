@@ -31,11 +31,11 @@ export class WritingpadComponent implements OnInit{
   onKeyUp(event: any) {
 
     const letter = document.getElementById(`letter_${this.correctLetters}`);
-    if (letter === null || event.key === 'Shift') return;
+    if (letter === null || !event.target.value) return;
     let isCorrect = false;
-    this.pressedKey = event.key
+    this.pressedKey = event.target.value
     this.expectedKey = this.placeholder[this.correctLetters]
-    if (event.key === this.placeholder[this.correctLetters]) {
+    if (event.target.value === this.placeholder[this.correctLetters]) {
       isCorrect = true;
       this.correctLetters = this.counterService.incCorrect();
     }else {
