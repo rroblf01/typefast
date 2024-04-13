@@ -37,9 +37,10 @@
 }
 
 button {
-    max-width: 10vh; 
+    max-width: 10vh;
+    text-align: center;
     margin: auto;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #F5CDAA;
     border: none;
     cursor: pointer;
