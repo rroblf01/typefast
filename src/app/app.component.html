@@ -1,4 +1,19 @@
-<div class="content">
-  <app-timernotice></app-timernotice>
-  <app-writingpad></app-writingpad>
+<div id="blur" class="container active">
+  <div class="center content">
+    <app-timernotice></app-timernotice>
+    <app-writingpad></app-writingpad>
+  </div>
+</div>
+
+<div id="popup" class="active">
+  <h2>
+    ¡Comprueba tu velocidad de escritura!
+  </h2>
+  <p>
+    En cuanto le des a "Empezar", aparecerá un texto en la pantalla y tendrás que escribirlo lo más rápido posible.
+    Al finalizar, se te mostrará tu velocidad de escritura en letras por minuto.
+  </p>
+  <div class="center">
+    <button (click)="toggleBlur()">Empezar</button>
+  </div>
 </div>

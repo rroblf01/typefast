@@ -12,7 +12,9 @@ export class TimernoticeComponent {
   intervalId: any;
   hitsPerMinute: string = '...';
 
-  constructor(private counterService: CounterService) {
+  constructor(private counterService: CounterService) {}
+
+  start(){
     this.intervalId = setInterval(() => {
       if (this.seconds > 0) {
         this.seconds--;

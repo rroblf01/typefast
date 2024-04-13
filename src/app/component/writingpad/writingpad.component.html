@@ -1,11 +1,10 @@
 <h2>Letras <span class="green">correctas</span>: {{this.correctLetters}}</h2>
 <h2>Letras <span class="red">falladas</span>: {{this.failLetters}}</h2>
 
-<h3>Letra pulsada: {{this.pressedKey}}, Letra esperada: {{this.expectedKey}}</h3>
 <p class="text-container">
     @for(element of placeholder; track element){
     <span id="letter_{{$index}}" class="text-to-write">{{element}}</span>
     }
 </p>
 
-<input id="input-text" type="text" maxlength="1" class="input-text" (keyup)="onKeyUp($event)" autofocus />
+<input id="input-text" type="text" maxlength="1" class="input-text" (keyup)="onKeyUp($event)" />
