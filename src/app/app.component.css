@@ -20,8 +20,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    max-width: 30vw;
-    padding: 50px;
+    max-width: 40vw;
+    padding: 20px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     visibility: hidden;
     opacity: 0;
